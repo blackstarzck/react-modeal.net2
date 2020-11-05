@@ -1,0 +1,27 @@
+.item {
+    width: calc(100% / 2 - 24px);
+    margin-bottom: 0;
+}
+.item a {
+    display: block;
+}
+.item:first-child {
+    margin-bottom: 35px;
+}
+.item a span {
+    display: block;
+    text-align: left;
+    font-size: 23px;
+    letter-spacing: -1px;
+}
+.item a span.title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.item a span.sub_title {
+    font-weight: 300;
+}
+.item a img {
+    width: 100%;
+    margin-bottom: 20px;
+}

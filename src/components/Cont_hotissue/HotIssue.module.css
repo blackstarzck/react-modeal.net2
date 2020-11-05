@@ -1,0 +1,17 @@
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.top .cont_title {
+    font-size: 30px;
+    font-weight: 700;
+}
+.item {
+    margin-bottom: 35px;
+    text-align: center;
+}
+.item:last-child {
+    margin-bottom: 0;
+}

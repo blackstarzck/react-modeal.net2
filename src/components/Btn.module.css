@@ -1,0 +1,44 @@
+/* 더보기 버튼 */
+.btn {
+    display: block;
+}
+.btn .circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    position: relative;
+    background-color: var(--btn-color01);
+}
+.btn .circle .bar {
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--btn-bar-color01);
+}
+.btn .circle .bar:first-child {
+    width: 18px;
+    height: 2px;
+}
+.btn .circle .bar:last-child {
+    width: 2px;
+    height: 18px;
+}
+/* [하단 배너부분#1] 버튼색상 */
+.btn .circle.first {
+    background-color: var(--btn-color02);
+}
+.btn .circle.first .bar {
+    background-color: var(--btn-bar-color02);
+}
+/* [하단 배너부분#2] 버튼색상 */
+.btn .circle.second {
+    background-color: var(--btn-color03);
+}
+.btn .circle.second .bar {
+    background-color: var(--btn-bar-color03);
+}
+.btn .circle.none {
+    display: none;
+}

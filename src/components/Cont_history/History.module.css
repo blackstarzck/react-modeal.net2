@@ -1,0 +1,63 @@
+
+.item.i1{
+    flex: 1;
+    text-align-last: left;
+    font-weight: 700;
+}
+.item.i1 h4 {
+    font-size: 25px;
+    color: var(--black01);
+    padding: 8px 0;
+}
+.item.i1 p {
+    font-weight: 700;
+    color: var(--font-color02);
+}
+.item.i2 {
+    text-align: right;
+}
+.item.i2 h4 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.item.i2 p {
+    font-size: 23px;
+    font-weight: 600;
+}
+.item.i2 .data {
+    font-family: 'S-CoreDream-3Light';
+    font-size: 44px;
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+.item.i2:last-child {
+    margin-left: 15px;
+}
+.item .icon {
+    width: 28px;
+    height: 23px;
+    background-color: red;
+}
+.history_container {
+    position: relative;
+    z-index: 1;
+    background-color: var(--bg-contents02);
+    padding-bottom: 50px;
+}
+.history_container .history {
+    position: relative;
+    width: 590px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 0 40px;
+    top: -45px;
+    left: 0; right: 0;
+    height: 157px;
+    margin: auto;
+    border: 1px solid var(--line-color01);
+    border-radius: 10px;
+    box-shadow: 0px 8px 4.65px 0.35px rgba(79, 78, 83, 0.1);
+}

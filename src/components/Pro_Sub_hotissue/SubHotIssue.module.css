@@ -1,0 +1,12 @@
+.section {
+    margin-top: 55px;
+    padding-bottom: 100px;
+}
+.item_wrapper .item {
+    width: 100%;
+    margin-bottom: 16px;
+}
+.item_wrapper .item img {
+    display: block;
+    margin: 0 auto;
+}

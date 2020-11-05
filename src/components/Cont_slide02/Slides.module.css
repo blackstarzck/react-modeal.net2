@@ -1,0 +1,22 @@
+.second_banner {
+    background-color: #e9b605;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    margin-top: 35px;
+    margin-bottom: 36px;
+}
+.second_banner .top {
+    margin-bottom: 30px;
+}
+.second_banner h3 {
+    font-family: 'S-CoreDream-3Light';
+    font-weight: 700 !important;
+    color: #480874;
+}
+.second_banner h3 b {
+    font-weight: 500;
+    color: #480874;
+}
+.second_banner .swiper-container {
+    border-radius: 8px;
+}

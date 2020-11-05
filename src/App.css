@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+:root {
+  --primary-color: #3a307d;
+  --secondary-color: #ea3903;
+
+  --bg-contents: #efefef;
+  --bg-contents02: rgb(233, 233, 233);
+  --bg-contents03: #e2e1eb;
+  --bg-contents04:  rgb(246, 246, 246);
+  --bg-contents05: #c5ccda;
+  --bg-contents06: #faf3eb;
+
+  --line-color01: rgb(207, 207, 207);
+  --line-color02: rgb(125, 125, 128);
+  --line-color03: #b8b8b8;
+  --line-color04: rgb(225, 225, 225);
+
+  --font-color01: #666666;
+  --font-color02: #9c9c9c;
+  --font-color03: #616161;
+  --font-color04: #6d7a93;
+  --font-color05: #7e7e7e;
+  --font-color06: #888888;
+
+  --black01: #000;
+  --black02: #333333;
+  --black03: #555;
+  --black04: #363636;
+  --white01: #ffff;
+
+  --btn-color01: #e2e1eb;
+  --btn-color02: #1c5a4b;
+  --btn-color03: #e97b05;
+
+  --btn-bar-color01: var(--black01);
+  --btn-bar-color02: #98c4b9;
+  --btn-bar-color03: var(--white01);
+}
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+@font-face {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Noto Sans CJK KR", "sans-serif";
+  background-color: #f9f8fe;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  background-color: var(--white01);
 }
-
-.App-link {
-  color: #61dafb;
+.cont {
+  padding: 70px 24px 0;
+  background-color: var(--white01);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cont_title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px ;
+  background-color: #fff;
 }

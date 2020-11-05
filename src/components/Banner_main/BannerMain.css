@@ -1,0 +1,21 @@
+.main_banner .swiper-container {
+}
+.main_banner .swiper-pagination{
+    width: auto !important;
+    left: 24px !important;
+    bottom: 85px!important;
+}
+.main_banner .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(194, 194, 194);
+}
+.main_banner .swiper-pagination-bullet-active {
+    background-color: var(--secondary-color);
+}
+.main_banner .swiper-wrapper {}
+.main_banner .swiper-slide {}
+.main_banner .swiper-slide img {
+    width: 100%;
+    vertical-align: top;
+}

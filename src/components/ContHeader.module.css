@@ -1,0 +1,14 @@
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.top .cont_title {
+    font-size: 30px;
+    font-weight: 700;
+}
+.top .title p {
+    font-size: 30px;
+    line-height: 34px;
+}

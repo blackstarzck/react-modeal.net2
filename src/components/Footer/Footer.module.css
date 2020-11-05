@@ -1,0 +1,9 @@
+.footer p {
+    text-align: center;
+    color: var(--font-color04);
+    width: 720px;
+    background-color: var(--bg-contents05);
+    font-size: 18px;
+    line-height: 28px;
+    padding: 33px 0;
+}

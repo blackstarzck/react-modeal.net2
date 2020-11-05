@@ -1,0 +1,55 @@
+.section {
+    margin-top: 55px;
+    padding: 0 24px 100px;
+    text-align: center;
+}
+.item_wrapper {}
+.item_wrapper .item {
+    padding: 30px;
+    border-bottom: 1px solid var(--line-color04);
+}
+.item_wrapper .item .link {
+    display: block;
+}
+.item_wrapper .item .link::after {content: ''; display: block; clear: both;}
+.item_wrapper .item .link .img {
+    float: left;
+    margin-right: 30px;
+    width: 250px;
+}
+.item_wrapper .item .link .img img {
+    width: 100%;
+}
+.item_wrapper .item .link .review {
+    float: left;
+    color: var(--black02);
+    width: calc(100% - 280px);
+    height: 200px;
+    overflow: hidden;
+    text-align: left;
+}
+.item_wrapper .item .link .review .title {
+    font-size: 23px;
+    font-weight: 500;
+}
+.item_wrapper .item .link .review .para {
+    display: -webkit-box;
+    font-size: 22px;
+    line-height: 31px;
+    font-weight: 300;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    margin-top: 20px;
+}
+
+.section .more_btn {
+    outline: none;
+    width: 250px;
+    height: 70px;
+    border: solid 1px var(--line-color03);
+    border-radius: 6px;
+    font-size: 24px;
+    color: var(--black03);
+    cursor: pointer;
+    margin-top: 20px;
+}

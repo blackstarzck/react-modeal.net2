@@ -1,0 +1,105 @@
+.head {
+    height: 190px;
+    padding: 60px 40px 0 40px;
+    background-color: #faf3eb;
+    color: var(--primary-color);
+}
+.head .login_btn {
+    float: right;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border: solid 2px var(--primary-color);
+    color: var(--primary-color);
+    font-size: 26px;
+}
+.list_container {
+    width: 100%;
+    padding-bottom: 110px;
+}
+.list_wrapper {}
+.list_wrapper .list {
+    font-family: 'Noto Sans KR', "sans-serif";
+    letter-spacing: -1px;
+    font-weight: 500;
+    height: 105px;
+    border-bottom: solid 1px #d7d7d7;
+    font-size: 28px;
+    color: var(--black04);
+    line-height: 105px;
+}
+.list_wrapper .list:last-child {
+    position: relative;
+}
+.list_wrapper .list a {
+    display: block;
+    width: 100%;
+    padding: 0 40px;
+}
+.list_wrapper .list.inActive a {
+    color: var(--font-color06);
+}
+.list_wrapper .list.inActive .switch_btn {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 110px;
+}
+.list_wrapper .list.inActive .switch_btn input[type="checkbox"]{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+}
+.list_wrapper .list.inActive .switch_btn input[type="checkbox"]:checked + label {
+    background-color: #f0592e;
+}
+.list_wrapper .list.inActive .switch_btn input[type="checkbox"]:checked + label::after {
+    content: 'ON';
+    top: 0;left: 20px;bottom: 0;
+}
+.list_wrapper .list.inActive .switch_btn input[type="checkbox"]:checked + label .circle {
+    background-color: #fff;
+    border: none;
+    background: linear-gradient(135deg, #3b2f7f 0%, #352b74 50%, #2a225b 100%);
+    transform: translateX(60px);
+}
+.list_wrapper .list.inActive .switch_btn label {
+    display: block;
+    position: absolute;
+    margin: auto;
+    top: 0;bottom: 0;
+    width: 110px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #b0aeaf;
+    transition-duration: 0.2s;
+}
+.list_wrapper .list.inActive .switch_btn label::after {
+    content: 'OFF';
+    line-height: 40px;
+    color: var(--white01);
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    bottom: 0;
+}
+.list_wrapper .list.inActive .switch_btn .circle {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    background: linear-gradient(135deg, #fdfdfd 0%, #f2f2f2 50%, #dddddd 100%);
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}

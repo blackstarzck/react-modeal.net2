@@ -1,0 +1,13 @@
+.review {
+    overflow: hidden;
+}
+.message {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.message p {
+    line-height: 1.2;
+}
+.message b {
+    font-weight: bold;
+}

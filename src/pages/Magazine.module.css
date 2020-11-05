@@ -1,0 +1,32 @@
+.tab_menu {
+    margin-top: 30px;
+}
+.tab_menu_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab_menu_wrapper .item {
+    margin: 0 20px;
+}
+.tab_menu_wrapper .item a {
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+    color: var(--font-color01);
+}
+.tab_menu_wrapper .item .link.clicked {
+    font-weight: 700;
+    color:var(--secondary-color);
+}
+.tab_menu_wrapper .item .link.clicked::after {
+    content: '';
+    position: absolute;
+    background-color: #ea3903;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    margin: auto;
+}

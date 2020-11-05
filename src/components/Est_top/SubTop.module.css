@@ -1,0 +1,31 @@
+.top {
+    padding: 40px 40px 60px 40px;
+    background-color: var(--bg-contents06);
+    color: var(--primary-color);
+    letter-spacing: -1px;
+}
+.top h2 {
+    font-size: 34px;
+    line-height: 44px;
+    font-weight: 500;
+}
+.top p {
+    font-size: 28px;
+    line-height: 44px;
+    font-weight: 300;
+}
+.modeal_into {
+    border: none;
+    outline: none;
+    display: block;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 96px;
+    width: 100%;
+    color: #ffff;
+    background-color: #f0592e;
+    border-radius: 10px;
+    margin-top: 10px;
+    letter-spacing: -1px;
+}

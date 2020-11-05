@@ -1,0 +1,21 @@
+.first_banner {
+    background-color: #377d6c;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    margin-top: 35px;
+    margin-bottom: 36px;
+}
+.first_banner {
+    margin-bottom: 30px;
+}
+.first_banner h3 {
+    font-weight: 400 !important;
+    color: #fef3a6;
+}
+.first_banner h3 b {
+    font-weight: 500;
+    color: #fef3a6;
+}
+.first_banner .swiper-container {
+    border-radius: 8px;
+}
