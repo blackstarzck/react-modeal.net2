@@ -14,14 +14,14 @@
     line-height: 44px;
     font-weight: 300;
 }
-.modeal_into {
+.modeal_intro {
     border: none;
     outline: none;
     display: block;
     font-size: 32px;
     font-weight: 600;
     text-align: center;
-    line-height: 96px;
+    height: 96px;
     width: 100%;
     color: #ffff;
     background-color: #f0592e;

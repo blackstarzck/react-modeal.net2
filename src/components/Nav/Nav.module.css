@@ -11,8 +11,8 @@
     width: calc(100% / 6);
     text-align: center;
 }
-.nav_item a,
-.nav_item a span {
+.nav_item .link,
+.nav_item .link span {
     display: block;
 }
 .nav_item .nav_img {
@@ -25,7 +25,7 @@
     top: 10px; left: 0; right: 0;
     margin: 0 auto;
 }
-.nav_item a span {
+.nav_item .link span {
     font-size: 22px;
     font-weight: 500;
     color: var(--font-color01);
@@ -33,9 +33,9 @@
 
 
 /* clicked */
-.nav_item a.clicked img {
+.nav_item .link.clicked img {
     top: -82px !important;
 }
-.nav_item a.clicked span {
+.nav_item .link.clicked span {
     color: var(--secondary-color);
 }

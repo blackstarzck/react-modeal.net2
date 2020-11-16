@@ -23,8 +23,7 @@ const TabMenuItem = [
 //     }
 // ]
 
-function Promotion({match}) {
-    console.log(match);
+function Promotion() {
     return (
         <>
             <div className={styles.tab_menu}>

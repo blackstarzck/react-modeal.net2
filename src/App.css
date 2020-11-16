@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #3a307d;
+  --primary-color: #231863;
   --secondary-color: #ea3903;
 
   --bg-contents: #efefef;
@@ -8,11 +8,16 @@
   --bg-contents04:  rgb(246, 246, 246);
   --bg-contents05: #c5ccda;
   --bg-contents06: #faf3eb;
+  --bg-contents07: #ebebeb;
+  --bg-contents08: #f8f8f8;
+  --bg-contents09: #f7f4ed;
 
   --line-color01: rgb(207, 207, 207);
   --line-color02: rgb(125, 125, 128);
   --line-color03: #b8b8b8;
   --line-color04: rgb(225, 225, 225);
+  --line-color05: #dedede;
+  --line-color06: #e0e0e0;
 
   --font-color01: #666666;
   --font-color02: #9c9c9c;
@@ -20,6 +25,7 @@
   --font-color04: #6d7a93;
   --font-color05: #7e7e7e;
   --font-color06: #888888;
+  --font-color07: #9ea2ab;
 
   --black01: #000;
   --black02: #333333;
@@ -34,8 +40,10 @@
   --btn-bar-color01: var(--black01);
   --btn-bar-color02: #98c4b9;
   --btn-bar-color03: var(--white01);
+  
 }
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
 
 @font-face {
   font-family: 'Noto Sans KR', sans-serif;

@@ -7,13 +7,14 @@ import Home from "./pages/Home.jsx";
 import Promotion from "./pages/Promotion.jsx";
 import Magazine from "./pages/Magazine.jsx";
 import Estimate from "./pages/Estimate.jsx";
+import EstimateProcess from "./pages/EstimateProcess.jsx";
 import Service from "./pages/Service.jsx";
 import Profile from "./pages/Profile.jsx";
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Switch } from 'react-router-dom';
+import EstimateHome from './pages/EstimateHome';
 
 
 class App extends Component {
-
   render() {
     return (
       <div className="container">
