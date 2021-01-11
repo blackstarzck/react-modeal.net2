@@ -13,7 +13,7 @@ class StepFirst extends Component {
     // 1단계 "StepFirst"와 연동 [차량 모델]
     getMlistData = async () => {
         const C_CODE = this.props.Ccode; // EstimateHome에서 C_CODE를 가져온 것.
-        const { data : { list } } = await axios.get("http://localhost:8080/_interface/car/model_select.php", {
+        const { data : { list } } = await axios.get("http://test.modeal.net/_interface/car/model_select.php", {
             params: {
                 C_CODE: `${C_CODE}`,
             }

@@ -30,7 +30,7 @@ function BannerMain() {
                     return (
                         <SwiperSlide key={item.id} tag="li">
                             <a href="">
-                                <img src={item.src} alt="banner"/>
+                                <img src={process.env.PUBLIC_URL + item.src} alt="banner"/>
                             </a>
                         </SwiperSlide>
                     )

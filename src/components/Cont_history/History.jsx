@@ -30,7 +30,7 @@ function History() {
             </div>
             <div className={styles.banner}>
                 <a href="">
-                    <img src="/banner-main-top3.png" alt="banner"/>
+                    <img src={process.env.PUBLIC_URL + "/banner-main-top3.png"} alt="banner"/>
                 </a>
             </div>
         </div>

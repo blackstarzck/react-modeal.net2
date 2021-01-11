@@ -13,7 +13,7 @@ class StepSec extends Component {
     getLineUptData = async () => {
         const C_CODE = this.props.Ccode;
         const M_CODE = this.props.Mcode;
-        const { data : { list } } = await axios.get("http://localhost:8080/_interface/car/lineup_select.php", {
+        const { data : { list } } = await axios.get("http://test.modeal.net/_interface/car/lineup_select.php", {
             params: {
                 C_CODE: `${C_CODE}`,
                 M_CODE: `${M_CODE}`,

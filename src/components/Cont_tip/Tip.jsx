@@ -24,7 +24,7 @@ function Tip() {
                     return (
                         <li className={styles.item} key={item.id}>
                             <a href="">
-                                <img src={item.src} alt="프로모션"/>
+                                <img src={process.env.PUBLIC_URL + item.src} alt="프로모션"/>
                             </a>
                         </li>
                     )

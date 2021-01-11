@@ -11,9 +11,9 @@ const ServiceHead = () => {
                 문의해 주세요 :&#41;<br/>
             </p>
             <div className={styles.img}>
-                <img src="/ch_icon.png" alt="카톡"/>
+                <img src={process.env.PUBLIC_URL + "/ch_icon.png"} alt="카톡"/>
             </div>
-            <button className={styles.go_talk}>채팅문의하기&nbsp;&nbsp;<img src="/go_black.png" alt="가기"/></button>
+            <button className={styles.go_talk}>채팅문의하기&nbsp;&nbsp;<img src={process.env.PUBLIC_URL + "/go_black.png"} alt="가기"/></button>
         </div>
     )
 }

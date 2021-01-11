@@ -32,7 +32,7 @@ function Price() {
                         <SwiperSlide key={item.id} tag='li'>
                             <a href="">
                                 <img
-                                    src={item.src}
+                                    src={process.env.PUBLIC_URL + item.src}
                                     alt={item.info}
                                 />
                             </a>

@@ -26,7 +26,7 @@ function Benefit() {
                         <ListTypeA
                             key={item.id}
                             numb={item.id}
-                            src={item.src}
+                            src={process.env.PUBLIC_URL + item.src}
                             alt={item.alt}
                             title={item.title} 
                             sub={item.sub}

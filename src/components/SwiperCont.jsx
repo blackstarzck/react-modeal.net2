@@ -18,7 +18,7 @@ function SwiperCont({ slides, options }) {
                 return (
                     <SwiperSlide key={item.id}>
                         <a href="">
-                            <img src={item.src} alt="사진"/>
+                            <img src={process.env.PUBLIC_URL + item.src} alt="사진"/>
                         </a>
                     </SwiperSlide>
                 )

@@ -24,7 +24,6 @@ class EstimateHome extends Component {
 
 
     render() {
-        console.log("home rendered???");
         return (
             <div className='section home' /* style={{backgroundColor: "blue"}}*/>
                 <SubTop/>

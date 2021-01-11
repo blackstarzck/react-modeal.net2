@@ -1,55 +1,87 @@
-import React from 'react';
-import styles from "./Promotion.module.css";
-import { Switch, Route, NavLink, useLocation, useRouteMatch } from "react-router-dom";
-import SubHotIssue from "../components/Pro_Sub_hotissue/SubHotIssue.jsx";
-import SubRelease from "../components/Pro_Sub_release/SubRelease.jsx";
-import SubBenefit from '../components/Pro_Sub_benefit/SubBenefit.jsx';
+import React, { Component } from 'react';
+import styles from './Promotion.module.css';
+import classNames from 'classnames/bind';
 
-const TabMenuItem = [
-    { id: 1, title: "#핫이슈", path: "/promotion" },
-    { id: 2, title: "#즉시출고", path: "/promotion/release" },
-    { id: 3, title: "#모딜혜택", path: "/promotion/benefit" },
-]
+class Promotion extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            selected: "#핫이슈"
+        }
+    }
+    setSelected = (tab) => {
+        this.setState({ selected: tab });
+    }
 
-// const routes = [
-//     { 
-//         path: "/", 
-//         element: <Promotion/>,
-//         children: [
-//             { id: 1, title: "#핫이슈", path: "/promotion", element: <SubHotIssue/> },
-//             { id: 2, title: "#즉시출고", path: "/promotion/release", element: <SubRelease/> },
-//             { id: 3, title: "#모딜혜택", path: "/promotion/benefit", element: <SubRelease/> },
-//         ]
-//     }
-// ]
+    render() {
+        return (
+            <TabNav
+                tabs={['#핫이슈', '#즉시출고', '#모딜혜택']}
+                selected={ this.state.selected }
+                setSelected={ this.setSelected }>
 
-function Promotion() {
-    return (
-        <>
-            <div className={styles.tab_menu}>
-                <ul className={styles.tab_menu_wrapper}>
-                    {TabMenuItem.map(item => {
+                <Content isSelected={this.state.selected === '#핫이슈'}/>
+                <Content isSelected={ this.state.selected === '#즉시출고'}/>
+                <Content isSelected={ this.state.selected === '#모딜혜택'}/>
+            </TabNav>
+        )
+    }
+}
+
+let cx = classNames.bind(styles);
+class TabNav extends Component {
+    render(){
+        return (
+            <>
+                <ul className={styles.tab_nav}>
+                    { this.props.tabs.map(tab => {
+                        const click = cx('active');
+                        const active = ( tab === this.props.selected ? `${click}` : '' );
                         return (
-                            <li className={styles.item} key={item.id}>
-                                <NavLink
-                                    exact
-                                    className={styles.link} 
-                                    activeClassName={styles.clicked}
-                                    to={item.path}>{item.title}
-                                </NavLink>
+                            <li className={styles.tab_nav_item} key={ tab }>
+                                <a className={ `${active}` } onClick={ () => this.props.setSelected(tab) }>
+                                    {tab}
+                                </a>
                             </li>
                         )
-                    })}
+                    }) }
                 </ul>
-            </div>
+                { this.props.children }
+            </>
+        )
+    }
+}
 
-            <Switch>
-                <Route exact path="/promotion"><SubHotIssue/></Route>
-                <Route path="/promotion/release"><SubRelease/></Route>
-                <Route path="/promotion/benefit"><SubBenefit/></Route>
-            </Switch>
-        </>
-    )
+class Content extends Component {
+    render(){
+        if(this.props.isSelected){
+            return (
+                <div className="contents">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="" alt=""/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            )
+        }
+        return null;
+    }
+}
+
+class Contents extends Component {
+    render(){
+        if(this.props.isSelected){
+            return (
+                <>
+
+                </>
+            )
+        }
+        return null;
+    }
 }
 
 export default Promotion

@@ -17,7 +17,7 @@ export class StepTrd extends Component {
         const C_CODE = this.props.Ccode;
         const M_CODE = this.props.Mcode;
         const L_CODE = this.props.Lcode;
-        const { data : { list } } = await axios.get("http://localhost:8080/_interface/car/grd_option_select.php", {
+        const { data : { list } } = await axios.get("http://test.modeal.net/_interface/car/grd_option_select.php", {
             params: {
                 C_CODE: `${C_CODE}`,
                 M_CODE: `${M_CODE}`,

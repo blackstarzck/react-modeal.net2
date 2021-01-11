@@ -73,7 +73,7 @@ function Nav() {
                             activeClassName={clicked}
                         >
                             <div className={styles.nav_img}>
-                                <img src={item.src} alt={item.title}/>
+                                <img src={process.env.PUBLIC_URL + item.src} alt={item.title}/>
                             </div>
                             <span className={styles.nav_title}>{item.title}</span>
                         </NavLink>

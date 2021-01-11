@@ -17,7 +17,7 @@ function SubRelease() {
                     return (
                         <li className={styles.item} key={item.id}>
                             <a className={styles.link} href="">
-                                <img src={item.src} alt={item.alt}/>
+                                <img src={process.env.PUBLIC_URL + item.src} alt={item.alt}/>
                             </a>
                         </li>
                     )

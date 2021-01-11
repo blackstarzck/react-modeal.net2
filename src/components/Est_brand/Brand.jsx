@@ -8,7 +8,7 @@ function Brand(props) {
     useEffect(() => {
         axios
         .get(
-            "http://localhost:8080/_interface/car/create_select.php")
+            "http://test.modeal.net/_interface/car/create_select.php")
             .then(res => {
                 setPosts(res.data);
             });
@@ -25,7 +25,7 @@ function Brand(props) {
                                 setPage("Process"); // 페이지 전환
                                 getLogo(C_CODE); // 클릭한 대상의 C_CODE
                             }}>
-                                <img src={`http://localhost:8080/${C_CODE.C_IMG}`} alt={C_CODE.C_NAME}/>
+                                <img src={`http://localhost:8080${C_CODE.C_IMG}`} alt={C_CODE.C_NAME}/>
                                 <p>{C_CODE.C_NAME}</p>
                             </a>
                         </li>
